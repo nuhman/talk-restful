@@ -2,6 +2,8 @@
 ### A simple restful web API for messaging, built using JAX-RS (Java API for RESTful Web Services)  
 ---  
 
+Follow along [here](https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn).
+
 **Environment Setup**:  
 * Java 8 - Maven Project ([here's how to create a simple maven project](https://wiki.jasig.org/display/UPM32/Creating+a+Simple+Maven+Project))
 * [Jessy 2.16](https://jersey.github.io/)
