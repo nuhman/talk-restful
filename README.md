@@ -6,7 +6,7 @@
 * Java 8 - Maven Project
 * Jessy 2.16  
   
-For all dependencies take a look [here](../blob/master/pom.xml)
+For all dependencies take a look [here](pom.xml)
 
 **Header**:  
 `Content-Type`: `application/json`  
