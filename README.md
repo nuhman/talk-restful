@@ -3,8 +3,8 @@
 ---  
 
 **Environment Setup**:  
-* Java 8 - Maven Project
-* Jessy 2.16  
+* Java 8 - Maven Project ([here's how to create a simple maven project](https://wiki.jasig.org/display/UPM32/Creating+a+Simple+Maven+Project))
+* [Jessy 2.16](https://jersey.github.io/)
   
 For all dependencies take a look [here](pom.xml)
 
