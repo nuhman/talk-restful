@@ -9,11 +9,11 @@ public class Profile {
 	private String firstname;
 	private Date created;   
 	
-	private Profile() {
+	public Profile() {
 		
 	}
 	
-	public Profile(long id, String profilename, String lastname, String firstname) {
+	public Profile(long id, String profilename, String firstname, String lastname) {
 		this.id = id;
 		this.profilename = profilename;
 		this.lastname = lastname;

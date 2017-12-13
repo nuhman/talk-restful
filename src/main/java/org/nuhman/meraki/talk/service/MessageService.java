@@ -1,6 +1,7 @@
 package org.nuhman.meraki.talk.service;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 import java.util.Map;
 
@@ -24,6 +25,26 @@ public class MessageService {
 	public Message getMessageById(long id) {
 		return messages.get(id);
 	}
+	
+	public List<Message> getAllMessagesForYear(int year){
+		List<Message> messagesForYear = new ArrayList<>();
+		Calendar cal = Calendar.getInstance();
+		for(Message message: messages.values()) {
+			cal.setTime(message.getCreated());
+			if(cal.get(Calendar.YEAR) == year) {
+				messagesForYear.add(message);
+			}
+		}
+		return messagesForYear;
+	}
+	
+	public List<Message> getAllMessagesPaginated(int start, int size){
+		ArrayList<Message> 	alist = new ArrayList<Message>(messages.values());
+		if(start >= alist.size()) return new ArrayList<Message>();
+		if(start + size > alist.size()) return alist.subList(start, alist.size());
+		return alist.subList(start, start + size);
+	}
+	
 	
 	public Message addMessage(Message msg) {
 		msg.setId(messages.size() + 1);
