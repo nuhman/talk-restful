@@ -6,12 +6,18 @@ Follow along [here](https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZh5U8RbdXq
 
 **Environment Setup**:  
 * Java 8 - Maven Project ([here's how to create a simple maven project](https://wiki.jasig.org/display/UPM32/Creating+a+Simple+Maven+Project))
-* [Jessy 2.16](https://jersey.github.io/)
+* [Jessy 2.16](https://jersey.github.io/)  
+* Apache Tomcat 8.5 Server
   
 For all dependencies take a look [here](pom.xml)
 
 **Header**:  
 `Content-Type`: `application/json`  
+**Resources**:  
+* `http://localhost:8080/talk/webapi/messages`  
+`http://localhost:8080/talk/webapi/messages?year=2017`  
+* `http://localhost:8080/talk/webapi/profiles`  
+
   
 Supported HTTP Methods: 
 * **GET**:  
